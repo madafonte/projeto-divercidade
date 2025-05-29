@@ -1,97 +1,137 @@
+/* === ESTILO BASE (Desktop) === */
 body {
-      margin: 0;
-      font-family: sans-serif;
-      display: flex;
-      background-image:url('fundofolha_transparente.png');
-      background-color: rgb(239, 249, 225);
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: cover;
-    }
+  margin: 0;
+  font-family: sans-serif;
+  display: flex;
+  background-image: url('fundofolha_transparente.png');
+  background-color: rgb(239, 249, 225);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
 
-    /* MENU LATERAL */
-    .sidebar {
-      width: 220px;
-      background-color:rgb(123, 95, 48);
-      padding: 10px;
-      display:flex;
-      flex-direction:column;
-      flex: 0 0 250px;
-      height: 100vh;
-    }
+.sidebar {
+  width: 220px;
+  background-color: rgb(123, 95, 48);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 250px;
+  height: 100vh;
+}
 
-    .menu-button {
-      background: none;
-      border: none;
-      text-align: left;
-      font-size: 16px;
-      padding: 10px;
-      cursor: pointer;
-      width: 100%;
-      font-weight: bold;
-      color: #333;
-      
-    }
+.menu-button {
+  background: none;
+  border: none;
+  text-align: left;
+  font-size: 16px;
+  padding: 10px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+  color: #333;
+}
 
-    .menu-button:hover {
-      background-color: rgb(194, 172, 102);
-      
-    }
+.menu-button:hover {
+  background-color: rgb(194, 172, 102);
+}
 
-    .submenu {
-      display: none;
-      flex-direction: column;
-      padding-left: 10px;
-    }
+.submenu {
+  display: none;
+  flex-direction: column;
+  padding-left: 10px;
+}
 
-    .submenu a {
-      text-decoration: none;
-      color: #174d1a;
-      padding: 8px 10px;
-    }
+.submenu a {
+  text-decoration: none;
+  color: #174d1a;
+  padding: 8px 10px;
+}
 
-    .submenu a:hover {
-      background-color:#cbc080;
-    }
-    /* CONTEÚDO PRINCIPAL */
-    .content {
-      flex-grow: 1;
-      padding: 20px;
-    }
+.submenu a:hover {
+  background-color: #cbc080;
+}
 
-    .content > div {
-      display: none;
-    }
+.content {
+  flex-grow: 1;
+  padding: 20px;
+}
 
-    .content > div.active {
-      display: block;
-    } 
+.content > div {
+  display: none;
+}
 
-    h2{
-        font-size: 50px;
-        font-family: Geneva, Verdana, sans-serif;
+.content > div.active {
+  display: block;
+}
 
-    }
-    #conteudo{
-        padding: 60px;
-    }
+h2 {
+  font-size: 50px;
+  font-family: Geneva, Verdana, sans-serif;
+}
 
-    .titulo {
-  font-weight: 5000;
-    }
-    #texto{
-        background-color:rgb(193, 216, 181);
-        padding: 40px;
-    }
-      #como-jogar{
-        background-color:rgb(193, 216, 181);
-        padding: 40px;
-    }
-      #proposito{
-        background-color:rgb(193, 216, 181);
-        padding: 40px;
-    }
-      #Sobre{
-        background-color:rgb(193, 216, 181);
-        padding: 40px;
-    }
+#conteudo {
+  padding: 60px;
+}
+
+.titulo {
+  font-weight: 500;
+}
+
+#texto,
+#como-jogar,
+#proposito,
+#Sobre {
+  background-color: rgb(193, 216, 181);
+  padding: 40px;
+}
+
+/* === RESPONSIVIDADE PARA CELULAR === */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    overflow-x: auto;
+    padding: 5px;
+  }
+  .menu-button {
+    flex: 1 0 auto;
+    padding: 8px;
+    font-size: 14px;
+  }
+  .submenu {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    display: none; /* ainda controlado pelo JS */
+    background-color: rgb(123, 95, 48);
+    padding-left: 0;
+  }
+  .submenu a {
+    padding: 10px;
+  }
+  .content {
+    padding: 10px;
+  }
+  #conteudo {
+    padding: 20px 10px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  #texto,
+  #como-jogar,
+  #proposito,
+  #Sobre {
+    padding: 20px;
+  }
+  body {
+    background-size: contain;
+    background-position: top center;
+  }
+}
