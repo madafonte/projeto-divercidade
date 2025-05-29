@@ -1,1 +1,97 @@
+body {
+      margin: 0;
+      font-family: sans-serif;
+      display: flex;
+      background-image:url('fundofolha_transparente.png');
+      background-color: rgb(239, 249, 225);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+    }
 
+    /* MENU LATERAL */
+    .sidebar {
+      width: 220px;
+      background-color:rgb(123, 95, 48);
+      padding: 10px;
+      display:flex;
+      flex-direction:column;
+      flex: 0 0 250px;
+      height: 100vh;
+    }
+
+    .menu-button {
+      background: none;
+      border: none;
+      text-align: left;
+      font-size: 16px;
+      padding: 10px;
+      cursor: pointer;
+      width: 100%;
+      font-weight: bold;
+      color: #333;
+      
+    }
+
+    .menu-button:hover {
+      background-color: rgb(194, 172, 102);
+      
+    }
+
+    .submenu {
+      display: none;
+      flex-direction: column;
+      padding-left: 10px;
+    }
+
+    .submenu a {
+      text-decoration: none;
+      color: #174d1a;
+      padding: 8px 10px;
+    }
+
+    .submenu a:hover {
+      background-color:#cbc080;
+    }
+    /* CONTEÚDO PRINCIPAL */
+    .content {
+      flex-grow: 1;
+      padding: 20px;
+    }
+
+    .content > div {
+      display: none;
+    }
+
+    .content > div.active {
+      display: block;
+    } 
+
+    h2{
+        font-size: 50px;
+        font-family: Geneva, Verdana, sans-serif;
+
+    }
+    #conteudo{
+        padding: 60px;
+    }
+
+    .titulo {
+  font-weight: 5000;
+    }
+    #texto{
+        background-color:rgb(193, 216, 181);
+        padding: 40px;
+    }
+      #como-jogar .texto{
+        background-color:rgb(193, 216, 181);
+        padding: 40px;
+    }
+      #proposito{
+        background-color:rgb(193, 216, 181);
+        padding: 40px;
+    }
+      #Sobre{
+        background-color:rgb(193, 216, 181);
+        padding: 40px;
+    }
