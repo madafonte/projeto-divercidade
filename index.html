@@ -1,211 +1,97 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DiverCidade</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-  <!-- MENU LATERAL -->
-  <div class="sidebar">
-    
-    <button class="menu-button" onclick="toggleMenu('manual-sub')">Manual</button>
-    <div id="manual-sub" class="submenu">
-      <a href="#" onclick="showTab('objetivo')">Objetivo</a>
-      <a href="#" onclick="showTab('componentes')">Componentes</a>
-      <a href="#" onclick="showTab('como-jogar')">Como jogar</a>
-    </div>
-    <button class="menu-button" onclick="showTab('proposito')">Propósito</button>
-    <button class="menu-button" onclick="showTab('Sobre')">Sobre Nós</button>
-</div>
-
-  <!-- CONTEÚDO -->
-  <div id="conteudo" class="content">
-    <div id="objetivo" class="active">
-      <h2 class="titulo">Objetivo</h2>
-      <p id="texto">Durante muito tempo, havia a diversidade…<br><br>
-
-	Tínhamos matas, rios, campos, florestas… cada um com sua riqueza única e espécies incríveis. Mas, com o avanço dos humanos, tudo foi sendo tomado. No lugar da natureza, nasceram os bairros e cidades. O habitat dos animais foi desaparecendo, e com ele, o equilíbrio da Terra.<br><br>
-
-	Diante dessa ameaça, quatro grandes guardiões da natureza — Lobo-guará, Arara-azul, Onça-pintada e Anaconda — se levantaram para agir. Eles querem trazer de volta a vida onde só restou cimento.<br><br>
-
-	Sua missão é reflorestar os bairros, recuperar os biomas e evitar a falência pelo caminho.<br><br>
-
-	Em DiverCidade, vence quem reflorestar mais bairros sem ir à falência, se tornando o verdadeiro herói da natureza!<br>
-</p>
-    </div>
-    <div id="componentes">
-      <h2 class="titulo">Componentes do Jogo</h2>
-      <div  id="texto">
-      <ul><li>1 tabuleiro dobrável envolto de fita de led</li></ul>
-      <ul><li>4 peças dos personagens </li></ul>
-      <ul><li>1 Lobo guará - vermelho </li></ul>
-      <ul><li>1 Arara azul - azul </li></ul>
-      <ul><li>1 Onça pintada - amarela</li></ul> 
-      <ul><li>1 Anaconda - verde</li></ul> 
-      <ul><li>1 mini computador</li></ul>
-      <ul><li>8 cartas de propriedade</li></ul>
-      </div>
-    </div>
-
-    <div id="como-jogar">
-      <h2 class="titulo">Como Jogar?</h2>
-      <p id="texto">Para início do jogo, todos os jogadores irão começar na casa “INÍCIO”, e tem o direito de fazer a primeira movimentação e jogador que tirar o valor maior no dado. O primeiro jogador deve girar o dado e parar na casa correspondente ao valor. No jogo existem CINCO (5) tipos de casas:<br><br>
-
-
-      <ol id="texto">
-        <li>
-          Casas de propriedade
-          <ul>
-            <li>As casas de propriedade são as quais o jogador pode comprar e gerar mais dinheiro através das taxas de aluguel que outro jogador deve pagar se cair nesta casa.</li>
-            <li>O jogador tem a opção de aumentar essa taxa gerando “mais reflorestamento” através da compra de 1 a 4 casas em um valor unitário, apenas quando parar novamente no bairro comprado.</li>
-            <li>O valor do bairro consta no tabuleiro e o valor de aluguel e de compra de mais casas estão presentes na carta da propriedade comprada, sendo dada ao jogador no momento de sua compra.</li><br>
-          </ul>
-        </li>
-        <li>
-          Vá para a Jaula / Jaula
-          <ul>
-            <li>Na casa ‘Vá para a jaula’, o jogador que parar nessa casa vai passar 3 rodadas preso na casa ‘Jaula’, do lado oposto do tabuleiro.</li>
-            <li>Durante as 3 rodadas preso, ele não pode se movimentar ou sair da Jaula até o fim das rodadas.</li>
-            <li>O jogador que não estiver preso e parar na casa ‘Jaula’... (completar descrição).</li><br>
-          </ul>
-        </li>
-        <li>
-          Feriado
-          <ul>
-            <li>Descrição do efeito do feriado aqui.</li><br>
-          </ul>
-        </li>
-        <li>
-          Sorte ou Revés
-          <ul>
-            <li>Descrição das cartas de sorte ou revés aqui.</li><br>
-          </ul>
-        </li>
-        <li>
-          Companhia Elétrica / Metrô
-          <ul>
-            <li>Descrição de como funcionam essas casas.</li><br>
-          </ul>
-        </li>
-      </ol>
-
-
-
-</p>
-    </div>
-    <div id="Sobre">
-      <h2 class="titulo">Sobre Nós</h2>
-      <p id="texto">Nós somos 10 estudantes da Cesar School, divididos nos cursos de Ciência da Computação e Design, que recebemos a proposta de montar um jogo pensando na acessibilidade para pessoas com transtorno do neurodesenvolvimento, principalmente TDAH e autismo. Apesar de termos feito exclusivamente para a disciplina de Projeto 1, achamos importante e necessário ter mais pessoas cientes dessa carência de jogos acessíveis para pessoas com este transtorno, as excluindo do prazer que é jogar e socializar com outras pessoas.<br><br><br><br>  
-      Os integrantes do grupo 2, que produziram o jogo DiverCidade, são:
-    <ul class="contatos">
-      <li>
-        Breno Pereira – 
-        <a href="https://www.linkedin.com/in/breno-pereira" target="_blank" rel="noopener">
-          linkedin
-        </a>
-      </li>
-      <li>
-        Cecília Mesquita – 
-        <a href="https://www.linkedin.com/in/cec%C3%ADlia-santana-62b655357?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app  " target="_blank" rel="noopener">
-          linkedin
-        </a>
-      </li>
-      <li>
-        João Carlos – 
-        <a href="https://www.linkedin.com/in/joão-carlos-vasconcelos-de-gusmão-759996368/" target="_blank" rel="noopener">
-          linkedin
-        </a>
-      </li>
-      <li>
-        João Pedro – 
-        <a href="https://www.linkedin.com/in/joao-pedro" target="_blank" rel="noopener">
-          linkedin
-        </a>
-      </li>
-      <li>
-        Letícia Soares – 
-        <a href="https:/www.linkedin.com/in/leticia-soares-do-nascimento-de-camello-barros-bbb019367" target="_blank" rel="noopener">
-          linkedin
-        </a>
-      </li>
-      <li>
-        Luiza Barbosa – 
-        <a href="https://www.linkedin.com/in/luiza-barbosa-9a6379364/" target="_blank" rel="noopener">
-          linkedin
-        </a>
-      </li>
-      <li>
-        Maria Augusta da Fonte – 
-        <a href="https://www.linkedin.com/in/mariaaugustadafonte/" target="_blank" rel="noopener">
-          linkedIn
-        </a>
-      </li>
-      <li>
-        Maria Fernanda – 
-        <a href="https://www.linkedin.com/in/maria-fernanda-montenegro-62358830b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " target="_blank" rel="noopener">
-          linkedin
-        </a>
-      </li>
-      <li>
-        Mila Siviero – 
-        <a href="https://www.linkedin.com/in/mila-siviero" target="_blank" rel="noopener">
-          linkedin
-        </a>
-      </li>
-      <li>
-        Sofia Cunha – 
-        <a href="https://www.linkedin.com/in/sofia-cunha-falc%C3%A3o-496a6b359?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " target="_blank" rel="noopener">
-          linkedin
-        </a>
-      </li>
-    </ul>
-</p>
-    </div>
-
-
-    <div id="proposito">
-        <h2 class="titulo">Propósito</h2>
-        <p id="texto">O DiverCidade foi criado com o intuito de não ser apenas um jogo de tabuleiro comum, mas também de ser acessível a pessoas com TEA (Transtorno do Espectro Autista) ou TDAH (Transtorno do Déficit de Atenção com Hiperatividade), uma vez que essas pessoas frequentemente enfrentam desafios de acessibilidade em muitos jogos tradicionais, como o Monopoly ou o Banco Imobiliário. <br><br>
-
-    A acessibilidade em jogos de tabuleiro infelizmente não é muito abordada, o que faz com que diversos jogadores neuro divergentes fiquem de fora dessas experiências. O DiverCidade almeja preencher essa lacuna, promovendo a inclusão sem comprometer a diversão ou afastar os demais jogadores. <br><br>
-
-  Para oferecer o suporte necessário aos jogadores, implementamos diversos recursos, entre eles:<br>
-  <ul><li>Uma fita de LED que contorna todo o tabuleiro, indicando para onde o jogador deve ir;<br></li></ul>
-  <ul><li>Um computador que armazena, processa e exibe os dados relacionados ao dinheiro, dados e mensagens de sorte ou revés;<br></li></ul>
-  <ul><li>Redução e organização das informações presentes nas cartas, no tabuleiro e no display do computador;<br></li></ul>
-  <ul><li>Uso de cores suaves e de forma estratégica, gerando um conforto visual.<br></li></ul>
-
-    Além do entretenimento, o DiverCidade estimula o raciocínio lógico, a organização e o planejamento, contribuindo para o desenvolvimento de habilidades essenciais durante a formação de qualquer pessoa.<br><br>
-
-  O DiverCidade é um jogo inclusivo, divertido e tecnológico, criado para acolher diferentes necessidades e ampliar a acessibilidade, sem abrir mão da experiência completa de um bom jogo de tabuleiro.<br><br>
-
-
-
-</p>
-      </div>
-  </div>
-
-
-  <!-- SCRIPT -->
-  <script>
-    function toggleMenu(id) {
-      const menu = document.getElementById(id);
-      menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+body {
+      margin: 0;
+      font-family: sans-serif;
+      display: flex;
+      background-image:url('fundofolha_transparente.png');
+      background-color: rgb(239, 249, 225);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
     }
 
-    function showTab(id) {
-      const tabs = document.querySelectorAll('.content > div');
-      tabs.forEach(tab => tab.classList.remove('active'));
-
-      const selected = document.getElementById(id);
-      if (selected) {
-        selected.classList.add('active');
-      }
+    /* MENU LATERAL */
+    .sidebar {
+      width: 220px;
+      background-color:rgb(123, 95, 48);
+      padding: 10px;
+      display:flex;
+      flex-direction:column;
+      flex: 0 0 250px;
+      height: 100vh;
     }
-  </script>
 
-</body>
-</html>
+    .menu-button {
+      background: none;
+      border: none;
+      text-align: left;
+      font-size: 16px;
+      padding: 10px;
+      cursor: pointer;
+      width: 100%;
+      font-weight: bold;
+      color: #333;
+      
+    }
+
+    .menu-button:hover {
+      background-color: rgb(194, 172, 102);
+      
+    }
+
+    .submenu {
+      display: none;
+      flex-direction: column;
+      padding-left: 10px;
+    }
+
+    .submenu a {
+      text-decoration: none;
+      color: #174d1a;
+      padding: 8px 10px;
+    }
+
+    .submenu a:hover {
+      background-color:#cbc080;
+    }
+    /* CONTEÚDO PRINCIPAL */
+    .content {
+      flex-grow: 1;
+      padding: 20px;
+    }
+
+    .content > div {
+      display: none;
+    }
+
+    .content > div.active {
+      display: block;
+    } 
+
+    h2{
+        font-size: 50px;
+        font-family: Geneva, Verdana, sans-serif;
+
+    }
+    #conteudo{
+        padding: 60px;
+    }
+
+    .titulo {
+  font-weight: 5000;
+    }
+    #texto{
+        background-color:rgb(193, 216, 181);
+        padding: 40px;
+    }
+      #como-jogar .texto{
+        background-color:rgb(193, 216, 181);
+        padding: 40px;
+    }
+      #proposito{
+        background-color:rgb(193, 216, 181);
+        padding: 40px;
+    }
+      #Sobre{
+        background-color:rgb(193, 216, 181);
+        padding: 40px;
+    }
