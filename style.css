@@ -73,20 +73,19 @@ body {
 
     }
     #conteudo{
+      
         padding: 60px;
     }
 
     .titulo {
+      background-color:rgb(193, 216, 181);
   font-weight: 5000;
     }
     #texto{
         background-color:rgb(193, 216, 181);
         padding: 40px;
     }
-      #como-jogar .texto{
-        background-color:rgb(193, 216, 181);
-        padding: 40px;
-    }
+    
       #proposito{
         background-color:rgb(193, 216, 181);
         padding: 40px;
